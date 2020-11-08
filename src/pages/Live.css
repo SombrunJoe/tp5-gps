@@ -3,31 +3,16 @@
     padding: auto;
 
     margin-bottom: 20px;
+    color:white
 
 }
 .header-md {
     background-color: var(--ion-color-primary);
     padding: 20px;
+    margin-bottom: 20px;
+    color:white
 }
 
-.toolbar-background {
-    background-color: var(--ion-color-primary);
-    padding: 5px;
-}
-
-.toolbar-container {
-    background-color: var(--ion-color-primary);
-    padding: auto;
-    margin: auto;
-
-}
-
-.toolbar-containt {
-    background-color: var(--ion-color-primary);
-    padding: auto;
-    margin: auto;
-
-}
 
 .in-toolbar{
 
@@ -35,9 +20,7 @@
      padding: 0px;
      text-align: center;
      margin: auto;
-     color:black;
-    
-    
+     color:white;
 }
 
 .toolbar-title-default {
@@ -45,5 +28,24 @@
     padding: 0px;
     text-align: center;
     margin: auto;
+    color:white;
+}
+
+.toolbar-content{
+    color:white;
+}
+
+.title-default {
+    padding: 5px;
     color:black;
+}
+
+.button-solid {
+    padding-left: 70%;
+    
+}
+
+.first-title{
+    text-align: center;
+    font-weight: bold;
 }

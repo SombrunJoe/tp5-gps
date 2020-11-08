@@ -1,4 +1,4 @@
-import { IonTitle } from '@ionic/react';
+import { IonTitle,IonItemDivider,IonGrid,IonRow,IonCol } from '@ionic/react';
 import { profile } from 'console';
 import React, { useEffect, useState } from 'react';
 import { Plugins } from '@capacitor/core';
@@ -31,9 +31,23 @@ const Profil: React.FC = () => {
 
     return (
         <>
-            <IonTitle>Username : {name}</IonTitle>
-            <IonTitle>Last latitude : {latitude}</IonTitle>
-            <IonTitle>Last longitude : {longitude}</IonTitle>
+        <IonGrid>
+            <IonRow>
+                <IonCol size="2"></IonCol>
+                <IonCol size="8">
+                    <IonItemDivider>
+                        <IonTitle>Username : {name}</IonTitle>
+                    </IonItemDivider>
+                    <IonItemDivider>
+                        <IonTitle>Last latitude : {latitude}</IonTitle>
+                    </IonItemDivider>
+                    <IonItemDivider>
+                        <IonTitle>Last longitude : {longitude}</IonTitle>
+                    </IonItemDivider>
+                </IonCol>
+                <IonCol size="2"></IonCol>
+            </IonRow>
+        </IonGrid>
         </>
     )
 }

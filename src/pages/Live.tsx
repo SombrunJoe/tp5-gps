@@ -7,8 +7,8 @@ const Live: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Live</IonTitle>
+        <IonToolbar >
+          <IonTitle color="light">Live</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Geoposition } from '@ionic-native/geolocation';
-import { IonButton, IonLoading, useIonViewWillEnter, IonTitle, IonIcon } from '@ionic/react';
+import { IonButton, IonLoading, useIonViewWillEnter, IonTitle, IonIcon, IonGrid, IonRow,IonCol, IonText } from '@ionic/react';
 import { useCurrentPosition, useWatchPosition, availableFeatures } from '@ionic/react-hooks/geolocation';
 import { Plugins } from '@capacitor/core';
 import { save } from 'ionicons/icons';
@@ -50,15 +50,22 @@ const Geolocalisation: React.FC = () => {
     }
 
 return(<>
-    <IonTitle>Your current position is :</IonTitle>
-    <p />
-    <IonTitle>Latitude : {resLat}</IonTitle>
-    <IonTitle>Longitude : {resLong}</IonTitle>
-        <IonButton onClick={(savePosition)}>
-            Save! 
-            <IonIcon icon={save}/>
-        </IonButton>
-
+    <IonGrid>
+        <IonRow>
+            <IonCol size="2"></IonCol>
+            <IonCol size="8">
+                <IonTitle>Your current position is :</IonTitle>
+                <p />
+                <IonTitle>Latitude : {resLat} </IonTitle>
+                <IonTitle>Longitude : {resLong}</IonTitle>
+                <IonButton onClick={(savePosition)}>
+                Save! 
+                <IonIcon icon={save}/>
+                </IonButton>
+            </IonCol>
+            <IonCol size="2"></IonCol>
+        </IonRow>
+    </IonGrid>
         </>
     )
 
