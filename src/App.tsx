@@ -10,7 +10,7 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, menu, person, square, triangle } from 'ionicons/icons';
 import Live from './pages/Live'
 import Profil from './pages/Profil'
 
@@ -44,11 +44,11 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="live" href="/live">
-            <IonIcon icon={triangle} />
+            <IonIcon icon={menu} />
             <IonLabel>Live</IonLabel>
           </IonTabButton>
           <IonTabButton tab="profil" href="/profil">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={person} />
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
         </IonTabBar>

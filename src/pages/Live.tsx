@@ -1,6 +1,7 @@
 import { IonList, IonItem, IonLabel, IonInput, IonToggle, IonRadio, IonCheckbox, IonItemSliding, IonItemOption, IonItemOptions, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import React from 'react';
 import Geolocation from '../components/geolocation'
+import './Live.css';
 
 const Live: React.FC = () => {
   return (

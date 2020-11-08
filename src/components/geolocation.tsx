@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { Geoposition } from '@ionic-native/geolocation';
-import { IonButton, IonLoading, useIonViewWillEnter, IonTitle } from '@ionic/react';
+import { IonButton, IonLoading, useIonViewWillEnter, IonTitle, IonIcon } from '@ionic/react';
 import { useCurrentPosition, useWatchPosition, availableFeatures } from '@ionic/react-hooks/geolocation';
 import { Plugins } from '@capacitor/core';
+import { save } from 'ionicons/icons';
 
 const { Geolocation, Storage } = Plugins;
 
@@ -49,7 +50,8 @@ return(
     <IonTitle>Latitude : {resLat}</IonTitle>
     <IonTitle>Longitude : {resLong}</IonTitle>
     <IonButton onClick={(savePosition)}>
-        <img src="assets/icon/icons8-save.png" />
+        Save! 
+        <IonIcon icon={save}/>
     </IonButton>
     </>
 )

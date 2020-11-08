@@ -1,0 +1,49 @@
+.ion-header {
+    background-color: var(--ion-color-primary);
+    padding: auto;
+
+    margin-bottom: 20px;
+
+}
+.header-md {
+    background-color: var(--ion-color-primary);
+    padding: 20px;
+}
+
+.toolbar-background {
+    background-color: var(--ion-color-primary);
+    padding: 5px;
+}
+
+.toolbar-container {
+    background-color: var(--ion-color-primary);
+    padding: auto;
+    margin: auto;
+
+}
+
+.toolbar-containt {
+    background-color: var(--ion-color-primary);
+    padding: auto;
+    margin: auto;
+
+}
+
+.in-toolbar{
+
+     background-color: var(--ion-color-primary);
+     padding: 0px;
+     text-align: center;
+     margin: auto;
+     color:black;
+    
+    
+}
+
+.toolbar-title-default {
+    background-color: var(--ion-color-primary);
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+    color:black;
+}
