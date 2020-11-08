@@ -49,24 +49,16 @@ const Geolocalisation: React.FC = () => {
         console.log(position)
     }
 
-return(
-    <>
+return(<>
     <IonTitle>Your current position is :</IonTitle>
     <p />
     <IonTitle>Latitude : {resLat}</IonTitle>
     <IonTitle>Longitude : {resLong}</IonTitle>
-    <IonButton onClick={(savePosition)}>
-        Save! 
-        <IonIcon icon={save}/>
-    //mettre un logo sur le bouton de sauvgarde 
-    return (
-        <>
-            <IonTitle>Your current position is :</IonTitle>
-            <IonTitle>Latitude : {resLat}</IonTitle>
-            <IonTitle>Longitude : {resLong}</IonTitle>
-            <IonButton onClick={(savePosition)}>
-                save
-    </IonButton>
+        <IonButton onClick={(savePosition)}>
+            Save! 
+            <IonIcon icon={save}/>
+        </IonButton>
+
         </>
     )
 
