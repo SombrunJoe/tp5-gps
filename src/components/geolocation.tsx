@@ -54,10 +54,12 @@ return(<>
         <IonRow>
             <IonCol size="2"></IonCol>
             <IonCol size="8">
-                <IonTitle>Your current position is :</IonTitle>
+                <IonTitle class="first-title">Your current position is :</IonTitle>
                 <p />
-                <IonTitle>Latitude : {resLat} </IonTitle>
-                <IonTitle>Longitude : {resLong}</IonTitle>
+                <IonTitle>Latitude :{resLat}</IonTitle>
+                <p />
+                <IonTitle>Longitude :{resLong}</IonTitle>
+                <p />
                 <IonButton onClick={(savePosition)}>
                 Save! 
                 <IonIcon icon={save}/>
