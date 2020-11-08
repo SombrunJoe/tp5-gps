@@ -1,4 +1,4 @@
-import { IonTitle, IonAlert } from '@ionic/react';
+import { IonTitle, IonAlert,IonGrid,IonRow,IonCol,IonItemDivider,IonText } from '@ionic/react';
 import { profile } from 'console';
 import React, {useEffect, useState} from 'react';
 import { Plugins } from '@capacitor/core';
